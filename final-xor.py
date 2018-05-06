@@ -14,6 +14,7 @@ W1 = tf.Variable(tf.random_uniform([n_inputs,n_layer1], -1, 1), name = "W1")
 b1 = tf.Variable(tf.ones([n_layer1]), name="bias1")
 Z1 = tf.matmul(X, W1) + b1
 pred1 = tf.nn.sigmoid(Z1)
+# pred1 = tf.nn.sigmoid(Z1)
 
 #layer 2
 # W2 = tf.Variable(tf.random_uniform([n_layer1,n_outputs], -1, 1), name = "W2")
